@@ -126,5 +126,5 @@ def check(filename) -> bool:
     if out:
         console.print(f'# encode type: [red]{out.split(": ")[-1][:-1]}[/red]')
         console.print("# This file cannot be decrypted because it uses our encryption.")
-        return True
+        return False
     return False
